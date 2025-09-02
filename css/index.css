@@ -1,0 +1,223 @@
+/* === Plus Jakarta Sans Google Fonts === */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  --bg-color: #202a3f;
+  --secondary-bg: #111827;
+  --btn-color: #2563eb;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  justify-items: center;
+  background-color: var(--bg-color);
+  background: linear-gradient(rgba(15, 25, 35, 0.9), rgba(15, 25, 35, 0.9)),
+    url(/img/img-one.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+header {
+  width: 100%;
+  height: 80px;
+  justify-items: center;
+  box-shadow: 0px 2px 10px rgba(77, 77, 77, 0.315);
+  background-color: var(--secondary-bg);
+}
+header .top-nav-con {
+  position: relative;
+  width: 90%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-nav-con .tn-right-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.top-nav-con .tn-right-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #2563eb;
+  border: 1px solid gray;
+}
+
+.tn-right-item .brand-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2563eb;
+}
+.tn-right-item .brand-name span {
+  color: white;
+}
+
+/* === left item === */
+/* === Admin Support === */
+
+.admin-support-btn {
+  height: 50px;
+  display: flex;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0px 30px;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--btn-color);
+}
+.admin-support-btn:hover {
+  background-color: #0442ca;
+}
+.admin-support-con {
+  position: absolute;
+  padding: 20px;
+  right: 0;
+  width: 100%;
+  top: 90px;
+  text-align: center;
+  z-index: 999;
+  background-color: #202a3fcc;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  border-radius: 5px;
+}
+.admin-support-con.active {
+  opacity: 1;
+}
+
+.admin-support-con h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/* === card === */
+
+.admin-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.amdmin-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 20px 10px;
+  background-color: #2564eb15;
+  border: 8px groove #2564eb8c;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.amdmin-card h3 {
+  word-spacing: 5px;
+}
+.amdmin-card:hover {
+  border: 8px groove #2563eb;
+  transform: scale(105%);
+}
+.amdmin-card .link-btn {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  background-color: #0442ca;
+  transition: all 0.3s ease-in-out;
+}
+
+.amdmin-card .link-btn:hover {
+  background-color: var(--btn-color);
+}
+
+/* === Hero Section === */
+.hero-secontion {
+  width: 100%;
+  margin-top: 40px;
+  justify-items: center;
+}
+.hero-secontion .hero-container {
+  width: 90%;
+  display: flex;
+  /* line-height: 40px; */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.hero-container h2 {
+  font-size: 35px;
+  margin-top: 20px;
+  word-spacing: 5px;
+  color: var(--btn-color);
+}
+.hero-container h1 {
+  font-size: 38px;
+  margin-top: 20px;
+  font-weight: 900;
+  color: #10b981;
+  word-spacing: 5px;
+}
+.hero-container p,
+span {
+  font-size: 20px;
+  margin-top: 10px;
+  color: white;
+  word-spacing: 5px;
+}
+
+/* === download btns === */
+
+.btns-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.btns-con .btn-style {
+  font-size: 20px;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 3px ridge #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btns-con .btn-style:hover,
+.btn-style:hover {
+  border: 3px ridge #10b981;
+  background-color: var(--btn-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-style.selected {
+  border: 3px groove #10b981;
+  background-color: #10b981;
+}
