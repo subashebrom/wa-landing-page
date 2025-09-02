@@ -232,14 +232,6 @@ footer {
 @media (max-width: 768px) {
   body {
     height: 110vh;
-    /* height: auto;
-    justify-items: center;
-    background-color: var(--bg-color);
-    background: linear-gradient(rgba(15, 25, 35, 0.9), rgba(15, 25, 35, 0.9)),
-      url(/img/img-one.jpeg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover; */
   }
   header {
     height: 60px;
@@ -255,7 +247,7 @@ footer {
   .admin-support-btn {
     height: 40px;
     font-size: 18px;
-      padding: 0px 15px;
+    padding: 0px 15px;
   }
   .admin-support-con {
     top: 80px;
@@ -292,9 +284,13 @@ footer {
   }
   .btns-con {
     display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
     margin-top: 10px;
-    row-gap: 10px;
     text-align: center;
+  }
+  .btns-con a {
+    cursor: pointer;
   }
   .btns-con .btn-style:hover {
     border: 3px ridge #10b981;
