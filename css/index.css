@@ -115,7 +115,7 @@ header .top-nav-con {
   column-gap: 20px;
 }
 
-.amdmin-card {
+.admin-card {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -130,14 +130,14 @@ header .top-nav-con {
   color: white;
   transition: all 0.3s ease-in-out;
 }
-.amdmin-card h3 {
+.admin-card h3 {
   word-spacing: 5px;
 }
-.amdmin-card:hover {
+.admin-card:hover {
   border: 8px groove #2563eb;
   transform: scale(105%);
 }
-.amdmin-card .link-btn {
+.admin-card .link-btn {
   width: 100%;
   padding: 10px 0;
   font-size: 18px;
@@ -147,7 +147,7 @@ header .top-nav-con {
   transition: all 0.3s ease-in-out;
 }
 
-.amdmin-card .link-btn:hover {
+.admin-card .link-btn:hover {
   background-color: var(--btn-color);
 }
 
@@ -221,10 +221,83 @@ span {
   border: 3px groove #10b981;
   background-color: #10b981;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 80px;
+footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 80px;
+  font-size: 20px;
+  color: white;
+}
+
+/* === Mobile responsive === */
+@media (max-width: 768px) {
+  body {
+    height: 110vh;
+    /* height: auto;
+    justify-items: center;
+    background-color: var(--bg-color);
+    background: linear-gradient(rgba(15, 25, 35, 0.9), rgba(15, 25, 35, 0.9)),
+      url(/img/img-one.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; */
+  }
+  header {
+    height: 60px;
+  }
+  header .top-nav-con {
+    height: 60px;
+  }
+
+  .top-nav-con .tn-right-item img {
+    width: 40px;
+    height: 40px;
+  }
+  .admin-support-btn {
+    height: 40px;
     font-size: 20px;
-    color: white;
+
+  }
+  .admin-support-con {
+    top: 80px;
+        background-color: #202a3f;
+  }
+  .admin-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20px;
+  }
+  .admin-card h3{
+    font-size: 16px;
+  }
+  .hero-secontion {
+    margin-top: 20px;
+  }
+  .hero-container img {
+    width: 100px;
+    height: 100px;
+  }
+  .hero-container h2 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  .hero-container h1 {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .hero-container p,
+  span {
+    font-size: 16px;
+    text-align: center;
+  }
+  .btns-con {
+    display: grid;
+    margin-top: 10px;
+    row-gap: 10px;
+    text-align: center;
+  }
+  footer{
+      padding-bottom: 20px;
+  }
 }
