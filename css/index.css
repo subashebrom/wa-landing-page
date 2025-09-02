@@ -210,8 +210,7 @@ span {
   transition: all 0.3s ease-in-out;
 }
 
-.btns-con .btn-style:hover,
-.btn-style:hover {
+.btns-con .btn-style:hover {
   border: 3px ridge #10b981;
   background-color: var(--btn-color);
   transition: all 0.3s ease-in-out;
@@ -255,19 +254,18 @@ footer {
   }
   .admin-support-btn {
     height: 40px;
-    font-size: 20px;
-
+    font-size: 18px;
   }
   .admin-support-con {
     top: 80px;
-        background-color: #202a3f;
+    background-color: #202a3f;
   }
   .admin-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 20px;
   }
-  .admin-card h3{
+  .admin-card h3 {
     font-size: 16px;
   }
   .hero-secontion {
@@ -297,7 +295,12 @@ footer {
     row-gap: 10px;
     text-align: center;
   }
-  footer{
-      padding-bottom: 20px;
+  .btns-con .btn-style:hover {
+    border: 3px ridge #10b981;
+    background-color: var(--btn-color);
+    transition: all 0.3s ease-in-out;
+  }
+  footer {
+    padding-bottom: 20px;
   }
 }
