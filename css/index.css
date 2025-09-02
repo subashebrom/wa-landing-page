@@ -255,6 +255,7 @@ footer {
   .admin-support-btn {
     height: 40px;
     font-size: 18px;
+      padding: 0px 15px;
   }
   .admin-support-con {
     top: 80px;
