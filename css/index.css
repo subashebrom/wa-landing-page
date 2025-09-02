@@ -221,3 +221,10 @@ span {
   border: 3px groove #10b981;
   background-color: #10b981;
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 80px;
+    font-size: 20px;
+    color: white;
+}
